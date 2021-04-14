@@ -36,7 +36,7 @@ app.get("/", function(req, res) {
 });
 
 
-//connection.query('create table tabletest(id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY, thing VARCHAR(255) NOT NULL)',(err,rows) => {
+//connection.query('create table tabletest(id INT(255) UNSIGNED AUTO_INCREMENT PRIMARY KEY, thing VARCHAR(255) NOT NULL,filename VARCHAR(255) UNIQUE))',(err,rows) => {
 //	if(err){
 //		throw err
 //	}else{
