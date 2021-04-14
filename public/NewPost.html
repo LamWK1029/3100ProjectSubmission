@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>newPost</title>
+    <link rel="stylesheet" href="logreg.css" type="text/css">
+</head>
+<body>
+<div class="container" id="container">
+
+    <form action="/newFile" method="POST">
+        <h1 class="Slogan" style="padding-bottom: 20px">What do you want to say ?</h1>
+        <section class="post">
+            <lable for="post">What is your topic: </lable>
+            <input type="text" name="topic" id="post" required minlength="3" maxlength="120">
+        </section>
+        <br>
+        <section class="upload">
+            <lable for="file">What do you want to upload: </lable>
+            <input type="file" name="file" id="file" accept="audio/*,video/*,image/*, pdf/*" required>
+            <input type="text" name="description" id="description" maxlength="80"placeholder="Give description on it (e.g. homework/answer...) "required>
+        </section>
+
+        <section class="comment">
+            <p>Message to every reader:</p>
+            <textarea id="extra" name="message" rows="5" cols="40" style="width: 100%"></textarea>
+        </section>
+
+        <section class="submit">
+            <button type="'submit" class="button3">Post</button>
+        </section>
+    </form>
+</div>
+</body>
+</html>

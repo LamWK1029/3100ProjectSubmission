@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's start working</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+<nav>
+    <ul>
+        <form action="/LogOut" method="POST">
+            <li style="float:right"><button style=" color: white; border: none;background-color: Transparent;" type ="submit" class="button"> Log out </button></li>
+        </form>
+    </ul>
+</nav>
+
+<main>
+    <h1 style="margin-left: 50px">Administrator </h1>
+    <ul id="forums-list-1" class="forums">
+        <li class="forum-header">
+            <ul class="title-bar">
+                <li class="forum-topic">Topic</li>
+                <li class="forum-reply">--</li>
+                <li class="forum-like">Approve</li>
+            </ul>
+        </li>
+        <li class="forum-body">
+            <ul id="post-01" class="thread">
+                <li class="post-topic">
+                    <a class="link" href="CSCI3100_2021_assignment_1.pdf">3100HW1</a>
+                </li>
+                <li class="post-freshness">--</li>
+                <li class="post-reply">--</li>
+
+                <form action="/reject" method="POST">
+                    <div class="dislikes">
+                        <button id="reject">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <form action="/approve" method="POST">
+                    <input type="text" placeholder="loyaltyPoint" id="loyaltyPoint" name="userLoyaltyPoint" REQUIRED/>
+                    <button id="approve">
+                        <i class="fa fa-check"></i>
+                    </button>
+                </form>
+
+            </ul>
+        </li>
+        <li class="forum-footer">
+            <a href="#1" class="page-numbers">1</a>
+        </li>
+    </ul>
+
+</main>
+
+</body>
+</html>

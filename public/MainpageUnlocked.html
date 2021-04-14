@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Echo - Homepage </title>
+</head>
+<body>
+<nav>
+    <ul>
+        <form action="/post" method="POST">
+        <li><button style=" color: white; border: none;background-color: Transparent; padding: 12px 45px;" class="active"><i class="fa fa-fw fa-envelope"></i>Post</button></li>
+        </form>
+        <form action="/profile" method="POST">
+        <li><button style=" color: white; border: none;background-color: Transparent; padding: 12px 45px;"><i class="fa fa-fw fa-user"></i>personal information</button></li>
+        </form>
+        <form action="/edit" method="POST">
+            <li><button style=" color: white; border: none;background-color: Transparent; padding: 12px 45px;"><i class="fa fa-fw fa-user"></i> update Profile </button></li>
+        </form>
+        <form action="/LogOut" method="POST">
+        <li style="float:right"><button style=" color: white; border: none;background-color: Transparent; padding: 12px 45px;"> Log out </button></li>
+        </form>
+        <form action="/newPost" method="POST">
+        <li style="float:right"><button style=" color: white; border: none;background-color: Transparent; padding: 12px 45px;"> New Post</button></li>
+        </form>
+    </ul>
+</nav>
+
+<main>
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Search" class="search">
+    <h1 style="margin-left: 50px">All Posts</h1>
+    <ul id="forums-list-1" class="forums">
+        <li class="forum-header">
+            <ul class="title-bar">
+                <li class="forum-topic">Topic</li>
+                <li class="forum-freshness">Comment</li>
+            </ul>
+        </li>
+        <li class="forum-body">
+            <ul id="post-01" class="thread">
+                <li class="post-topic">
+                    <a class="link" href="CSCI3100_2021_assignment_1.pdf">3100HW1</a></li>
+                <li class="post-freshness">--</li>
+
+            </ul>
+        </li>
+        <li class="forum-footer">
+                <a href="MainpageUnlocked.html" class="page-numbers">1</a>
+                <p> <span class="td colspan4">&nbsp;</span></p>
+        </li>
+    </ul>
+
+</main>
+
+</body>
+</html>

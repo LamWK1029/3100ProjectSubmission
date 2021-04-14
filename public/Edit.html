@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit your profile</title>
+    <link rel="stylesheet" href="logreg.css" type="text/css">
+</head>
+<body>
+<div class="container" id="container">
+
+    <form action="/changeNP" method="POST">
+        <h1 class="edit-header">Fill in both columns</h1>
+        <br>
+        <section class="name">
+            <lable for="UserName">What is the new username: </lable>
+            <input type="text" name="UserNameEdit" id="UserName" required maxlength="30">
+        </section>
+        <section class="password">
+            <lable for="pw">What is the new password: </lable>
+            <input type="password" name="pwEdit" id="pw" required minlength="8" maxlength="15">
+        </section>
+        <section class="submit">
+            <button type="submit" value="Submit" class="button3">Submit</button>
+        </section>
+    </form>
+</div>
+
+
+</body>
+</html>
