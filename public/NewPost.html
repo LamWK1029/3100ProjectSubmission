@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="logreg.css" type="text/css">
 </head>
 <body>
-<div class="container" id="container">
-
+<div class="container" id="container">  
+    <!--Getting information to form a post-->
     <form action="/newFile" method="POST">
         <h1 class="Slogan" style="padding-bottom: 20px">What do you want to say ?</h1>
         <section class="post">
@@ -16,12 +16,14 @@
         </section>
         <br>
         <section class="upload">
+            <!--matreials to be uploaded-->
             <lable for="file">What do you want to upload: </lable>
             <input type="file" name="file" id="file" accept="audio/*,video/*,image/*, pdf/*" required>
             <input type="text" name="description" id="description" maxlength="80"placeholder="Give description on it (e.g. homework/answer...) "required>
         </section>
 
         <section class="comment">
+            <!--message-->
             <p>Message to every reader:</p>
             <textarea id="extra" name="message" rows="5" cols="40" style="width: 100%"></textarea>
         </section>
