@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--load icon and styling-->
 </head>
 
 <body>
@@ -26,8 +27,10 @@
                 <li class="forum-reply">--</li>
                 <li class="forum-like">Approve</li>
             </ul>
+            <!--header for each column in the list-->
         </li>
         <li class="forum-body">
+            <!--first item-->
             <ul id="post-01" class="thread">
                 <li class="post-topic">
                     <a class="link" href="CSCI3100_2021_assignment_1.pdf">3100HW1</a>
@@ -36,6 +39,7 @@
                 <li class="post-reply">--</li>
 
                 <form action="/reject" method="POST">
+                    <!--reject the post-->
                     <div class="dislikes">
                         <button id="reject">
                             <i class="fa fa-times"></i>
@@ -44,6 +48,7 @@
                 </form>
 
                 <form action="/approve" method="POST">
+                    <!--approve the post-->
                     <input type="text" placeholder="loyaltyPoint" id="loyaltyPoint" name="userLoyaltyPoint" REQUIRED/>
                     <button id="approve">
                         <i class="fa fa-check"></i>
@@ -53,6 +58,7 @@
             </ul>
         </li>
         <li class="forum-body">
+            <!--second item-->
             <ul id="post-02" class="thread">
                 <li class="post-topic">
                     <a class="link" href="3100HW2.png">3100HW2</a>
