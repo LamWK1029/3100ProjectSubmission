@@ -34,7 +34,8 @@
                 </li>
                 <li class="post-freshness">--</li>
                 <li class="post-reply">--</li>
-
+                
+                <!--reject the post-->
                 <form action="/reject" method="POST">
                     <div class="dislikes">
                         <button id="reject">
@@ -44,7 +45,9 @@
                 </form>
 
                 <form action="/approve" method="POST">
+                    <!--input the number of loyalty points need to distribute to the user-->
                     <input type="text" placeholder="loyaltyPoint" id="loyaltyPoint" name="userLoyaltyPoint" REQUIRED/>
+                    <!--aprrove the post-->
                     <button id="approve">
                         <i class="fa fa-check"></i>
                     </button>
